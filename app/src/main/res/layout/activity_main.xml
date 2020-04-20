@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nasabah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/muli"
+        android:text="Data Nasabah"
+        android:textColor="#252728"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/foto_nasabah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nasabah"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foto_nasabah"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/muli"
+        android:text="Nama: "
+        android:textColor="#252728" />
+
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foto_nasabah"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/nama"
+        android:fontFamily="@font/muli"
+        android:textColor="#252728"
+        tools:text="Nama" />
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/muli"
+        android:text="Alamat: "
+        android:textColor="#252728" />
+
+    <TextView
+        android:id="@+id/tvAlamat"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNama"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/alamat"
+        android:fontFamily="@font/muli"
+        android:textColor="#252728"
+        tools:text="Alamat" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alamat"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/muli"
+        android:text="E-mail"
+        android:textColor="#252728" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAlamat"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/email"
+        android:fontFamily="@font/muli"
+        android:textColor="#252728"
+        tools:text="E-mail" />
+
+    <Button
+        android:id="@+id/button_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmail"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#89C52C"
+        android:fontFamily="@font/muli"
+        android:text="Refresh"
+        android:textColor="#252728" />
+
+    <TextView
+        android:id="@+id/nama_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_refresh"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/muli"
+        android:text="Nama: "
+        android:textColor="#252728" />
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_refresh"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/nama_input"
+        android:fontFamily="@font/muli"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:textColor="#252728"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/alamat_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama_input"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/muli"
+        android:text="Alamat: "
+        android:textColor="#252728" />
+
+    <EditText
+        android:id="@+id/etAlamat"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_refresh"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="42dp"
+        android:layout_toEndOf="@+id/alamat_input"
+        android:fontFamily="@font/muli"
+        android:hint="Alamat"
+        android:inputType="textPostalAddress"
+        android:textColor="#252728"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/email_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alamat_input"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/muli"
+        android:text="Email: "
+        android:textColor="#252728" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAlamat"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/nama_input"
+        android:fontFamily="@font/muli"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#252728"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEmail"
+        android:layout_alignEnd="@+id/etEmail"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="83dp"
+        android:backgroundTint="#89C52C"
+        android:fontFamily="@font/muli"
+        android:text="Update"
+        android:textColor="#252728" />
+</RelativeLayout>
